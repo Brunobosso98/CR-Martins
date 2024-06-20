@@ -1,0 +1,20 @@
+.vagas {
+  background: url("../imagens/icones/vagas.svg") no-repeat 28px 3px;
+}
+
+#space {
+  padding-left: 80px;
+}
+
+.vagas-dados {
+  background: var(--cor-12);
+}
+
+.vagas-nomes {
+  margin-top: -30px;
+  color: var(--cor-7);
+}
+
+.vagas-nomes p {
+  margin-bottom: -10px;
+}

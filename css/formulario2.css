@@ -43,38 +43,3 @@
     grid-column: 1;
   }
 }
-
-.teste2 {
-  position: relative;
-}
-
-.teste {
-  font-weight: bold;
-  white-space: nowrap;
-  position: absolute;
-  margin-top: 298px;
-  margin-left: 130px;
-}
-
-.br {
-  display: none;
-}
-
-@media (max-width: 1300px) {
-  .br {
-    display: block;
-  }
-}
-
-@media (max-width: 800px) {
-  .br {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .teste {
-    margin-top: 490px;
-    margin-left: 100px;
-  }
-}
