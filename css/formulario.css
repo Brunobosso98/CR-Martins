@@ -78,3 +78,14 @@
     margin-left: 100px;
   }
 }
+
+@media (max-width: 550px) {
+  .teste {
+    margin-top: 480px;
+    margin-left: 80px;
+    font-size: 14px;
+  }
+  .br {
+    display: block;
+  }
+}
