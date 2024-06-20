@@ -1,19 +1,3 @@
-.font-1-1 {
-  line-height: 1.3;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.font-2-1 {
-  margin-bottom: 0.5%;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
@@ -68,7 +52,7 @@ a {
   height: 2px;
   width: 0%;
   background: #000000;
-  margin-top: 4px;
+  margin-top: 0px;
   transition: 0.3s;
   position: absolute;
 }
@@ -153,17 +137,7 @@ a {
   }
 }
 
-@media (max-width: 1100px) {
-  .font-1-1 {
-    font-size: 48px;
-    line-height: 1.1;
-  }
-}
-
 @media (max-width: 800px) {
-  .font-1-1 {
-    font-size: 40px;
-  }
   .introducao-conteudo {
     left: 40px;
   }
@@ -234,7 +208,6 @@ a {
   gap: 5px; /* Espaço entre ícone e texto */
 }
 
-.font-sla,
 .icones-textos {
   margin-bottom: 2px; /* Espaçamento entre linhas */
 }
@@ -258,8 +231,10 @@ a {
   .menu-1 ul {
     gap: 90px;
   }
-  .font-sla {
-    font-size: 12px;
+  .icones-1 {
+    margin-right: -4px;
+    margin-top: 10px;
+    width: 32px;
   }
   .icone-1 {
     width: 24px;
@@ -274,9 +249,6 @@ a {
 }
 
 @media (max-width: 600px) {
-  .font-sla {
-    font-size: 10px;
-  }
   .icone-1 {
     width: 18px;
   }
@@ -287,7 +259,6 @@ a {
     bottom: 5px;
     left: 5px;
   }
-  .font-sla,
   .icones-textos {
     margin-bottom: 0px; /* Espaçamento entre linhas */
   }
@@ -314,87 +285,4 @@ a {
   color: inherit;
 }
 
-.footer-bg {
-  background-color: black;
-  margin-top: 120px;
-}
-
-.font-sla2 {
-  color: white;
-}
-
-.font-sla2-1 {
-  color: #b3b3b3;
-}
-
-.font-sla3 {
-  color: #9c9c9c;
-  grid-column: 1 / -1;
-  padding-top: 20px;
-  padding-bottom: 32px;
-}
-
-.container2 {
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 3fr 5fr 4fr;
-  padding-top: 60px;
-  gap: 20px;
-}
-
-.footer-contato h3 {
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.footer-contato ul li {
-  padding-bottom: 12px;
-}
-
-.footer-redes {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  gap: 20px;
-}
-
-.footer-redes img {
-  width: 62px;
-}
-
-.footer a:hover {
-  color: var(--cor-0);
-}
-
-@media (max-width: 800px) {
-  .footer {
-    grid-template-columns: 1fr 1fr;
-  }
-  .grid {
-    grid-column: 2;
-  }
-  .footer-redes img {
-    width: 48px;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-  .grid {
-    grid-column: 1;
-  }
-  .final-copy {
-    margin-top: 0px;
-  }
-}
+@import "./contato.css";

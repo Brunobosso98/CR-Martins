@@ -1,0 +1,88 @@
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-meios {
+  display: grid;
+}
+
+.contato-dados,
+.contato-formulario {
+  padding: 40px 60px 60px 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados {
+  border-radius: 5px 0 0 5px;
+  background: var(--cor-12);
+}
+
+.contato-formulario {
+  border-radius: 0 5px 5px 0;
+  background: var(--cor-0);
+}
+
+.contato h2 {
+  margin-bottom: 60px;
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+  background: url("../imagens/icones/local.svg") no-repeat 0px -2px;
+  padding-left: 28px;
+}
+
+.contato-endereco p {
+  margin-bottom: 8px;
+}
+
+.contato-meios {
+  margin-bottom: 40px;
+  background: url("../imagens/icones/mail.svg") no-repeat 0px -2px;
+}
+
+.contato-meios a:nth-child(2) {
+  margin-top: 18px;
+  background: url("../imagens/icones/tell.svg") no-repeat 0px -2px;
+}
+
+.contato-meios a {
+  display: block;
+  max-width: max-content;
+  padding: 2px;
+  padding-left: 28px;
+}
+.contato-meios a:hover {
+  color: var(--cor-0);
+}
+
+.contato-redes {
+  padding-left: 28px;
+}
+
+.contato-redes a {
+  padding-right: 32px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg h1 {
+    padding-top: 0px;
+  }
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+  .contato-dados h2 {
+    margin-bottom: 32px;
+  }
+  .contato-dados {
+    border-radius: 5px 5px 0 0;
+  }
+  .contato-dados,
+  .contato-formulario {
+    padding: 35px 60px 40px 40px;
+  }
+}
