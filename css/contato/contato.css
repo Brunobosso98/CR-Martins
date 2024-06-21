@@ -29,7 +29,7 @@
 
 .contato-endereco {
   margin-bottom: 32px;
-  background: url("../imagens/icones/local.svg") no-repeat 0px -2px;
+  background: url("../../imagens/icones/local.svg") no-repeat 0px -2px;
   padding-left: 28px;
 }
 
@@ -39,12 +39,12 @@
 
 .contato-meios {
   margin-bottom: 40px;
-  background: url("../imagens/icones/mail.svg") no-repeat 0px -2px;
+  background: url("../../imagens/icones/mail.svg") no-repeat 0px -2px;
 }
 
 .contato-meios a:nth-child(2) {
   margin-top: 18px;
-  background: url("../imagens/icones/tell.svg") no-repeat 0px -2px;
+  background: url("../../imagens/icones/tell.svg") no-repeat 0px -2px;
 }
 
 .contato-meios a {

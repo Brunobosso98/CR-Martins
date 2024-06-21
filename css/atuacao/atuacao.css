@@ -1,0 +1,28 @@
+.atuacao p {
+  margin-top: -20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.atuacao h3 {
+  margin-top: 60px;
+}
+
+.mcmv {
+  background: url("../../imagens/icones/mcmv.svg") no-repeat 450px 0px;
+}
+
+@media (max-width: 600px) {
+  .atuacao p {
+    font-size: 16px;
+  }
+  .mcmv {
+    background: url("../../imagens/icones/mcmv.svg") no-repeat 370px 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mcmv {
+    background: none;
+  }
+}

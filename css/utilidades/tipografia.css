@@ -66,6 +66,10 @@
   color: var(--cor-p1);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 @media (max-width: 1400px) {
   .t {
     font-size: 64px;
@@ -88,6 +92,9 @@
   .font-sub {
     font-size: 24px;
   }
+  .font-1-1 {
+    font-size: 54px;
+  }
 
   .font-2-2 {
     font-weight: re;
@@ -105,11 +112,23 @@
   .t {
     font-size: 32px;
   }
+  .font-3-2 {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 450px) {
   .t {
     font-size: 24px;
+  }
+  .font-3-2 {
+    font-size: 28px;
+  }
+  .font-sub {
+    font-size: 20px;
+  }
+  .font-1-1 {
+    font-size: 46px;
   }
 }
 
