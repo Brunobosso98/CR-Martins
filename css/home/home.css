@@ -1,3 +1,5 @@
+/* commit teste */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
@@ -202,12 +204,12 @@ a {
 .menu-1 ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
 }
 
 .menu-1 li {
   list-style: none;
   box-sizing: border-box;
-  padding-right: 60px;
 }
 
 .icones-textos {
@@ -228,6 +230,35 @@ a {
 .icone-2 {
   width: 12px; /* Ajuste conforme necessário */
   height: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.seta {
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.seta-ativa {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.setinha {
+  width: 12px;
+  top: 22px;
+  left: 32px;
+  position: absolute;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -251,6 +282,13 @@ a {
   .naosei {
     bottom: 10px;
     left: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-1 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

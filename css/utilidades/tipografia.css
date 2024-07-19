@@ -21,7 +21,7 @@
 }
 
 .font-2-2 {
-  margin-bottom: 2px; /* Espaçamento entre linhas */
+  margin-bottom: 2px;
 }
 
 .font-1-f {
@@ -107,7 +107,7 @@
     font-size: 10px;
   }
   .font-2-2 {
-    margin-bottom: 0px; /* Espaçamento entre linhas */
+    margin-bottom: 0px;
   }
   .t {
     font-size: 32px;
