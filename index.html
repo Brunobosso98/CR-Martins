@@ -28,19 +28,27 @@
     </header>
 
     <main class="introducao-bg">
+        <div class="overlay"></div>
         <div class="introducao container">
             <div class="introducao-conteudo">
                 <h1 class="t uppercase">15 anos <br> construindo seus <br> sonhos</h1>
+                <a href="#contato" class="btn-cta">Solicitar Orçamento</a>
             </div>
-            <div class="introducao-img">
-                <img src="./imagens/fotos/introducao1.jpg" alt="Casa bonita">
+            <div class="introducao-img slider">
+                <div class="slides">
+                    <img src="./imagens/fotos/introducao1.jpg" alt="Casa bonita">
+                    <img id="segunda" src="./imagens/fotos/introducao1.jpg" alt="Casa bonita">
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
                 <div class="indicators">
                     <span class="indicator active" data-slide="0"></span>
                     <span class="indicator" data-slide="1"></span>
+                    <!-- Adicione mais indicadores conforme o número de slides -->
                 </div>
             </div>
         </div>
     </main>
+
 
 
 
@@ -263,7 +271,28 @@
         </div>
     </article>
 
-    <footer class="footer-bg">
+    <section class="depoimentos-bg">
+        <div class="depoimentos container">
+            <h2 class="t uppercase">O que nossos clientes dizem</h2>
+            <div class="depoimentos-lista">
+                <div class="depoimento">
+                    <p>"Excelente serviço e profissionais dedicados! Minha casa ficou exatamente como eu sonhei."</p>
+                    <h4>João Silva</h4>
+                </div>
+                <div class="depoimento">
+                    <p>"A CR Martins superou minhas expectativas em todos os aspectos. Recomendo fortemente!"</p>
+                    <h4>Maria Oliveira</h4>
+                </div>
+                <div class="depoimento">
+                    <p>"A CR Martins superou minhas expectativas em todos os aspectos. Recomendo fortemente!"</p>
+                    <h4>João Paulo</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-home">
         <div class="footer container2">
             <a class="logo" href="./"><img src="./imagens/icones/logo_branca.svg" alt="CR Martins"></a>
             <div class="footer-contato">
@@ -291,6 +320,8 @@
             <p class="font-end">CR Martins © Alguns direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
