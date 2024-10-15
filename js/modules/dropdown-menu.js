@@ -23,7 +23,6 @@ dropdownMenus.forEach((menu) => {
   });
 
   menu.addEventListener("click", (event) => {
-    event.preventDefault();
     menu.classList.add("clicked");
     activateMenu();
     outsideClick(menu, deactivateMenu);

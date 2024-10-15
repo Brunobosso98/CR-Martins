@@ -15,6 +15,14 @@
   animation: show-up 0.3s forwards;
 }
 
+[data-dropdown] span {
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
 .rotar {
   rotate: 180deg;
 }
