@@ -1,7 +1,22 @@
+.imagem-obra-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Ajuste conforme necessário */
+  margin: auto;
+  box-shadow: 10px 10px 19px -6px rgba(0, 0, 0, 0.23);
+  border: 1px solid #000;
+}
+
+.imagem-obra-container img {
+  height: 420px;
+  border-radius: 6px 6px 0 0;
+}
+
 .obra-foto {
   border-radius: 6px;
   background: #d9d9d9;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
 }
 
 .obra-conteudo {
@@ -48,5 +63,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-2 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .d-block {
+    display: none;
   }
 }
