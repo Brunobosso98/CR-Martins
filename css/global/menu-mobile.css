@@ -2,6 +2,10 @@
   display: none;
 }
 
+.js [data-menu="list"] {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .js [data-menu="button"] {
     display: flex;
@@ -10,7 +14,7 @@
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-transform: uppercase;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
