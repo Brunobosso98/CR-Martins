@@ -12,86 +12,7 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.header-bg {
-  background-color: #ffffff;
-}
-
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 12px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-#logo {
-}
-
-.header-menu a {
-  color: #000000;
-  display: inline-block;
-  font-size: 18px;
-  position: relative;
-  padding: 16px 0px;
-}
-
-.header-menu a:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 0%;
-  background: #000000;
-  margin-top: 0px;
-  transition: 0.3s;
-  position: absolute;
-}
-
-.header-menu a.ativo::after {
-  width: 100%;
-}
-
-.header-menu a:hover:after {
-  width: 100%;
-}
-
-.header-menu a.no-underline:after {
-  content: none;
-}
-
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 4px;
-  }
-  .header-menu a {
-    padding: 12px 10px;
-    border-radius: 4px;
-  }
-  .header a:after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-  .header-menu a {
-    padding: 8px 10px;
-    font-size: 12px;
-  }
+  color: inherit;
 }
 
 .introducao-conteudo {
@@ -328,16 +249,6 @@ a {
   .icones-textos {
     gap: 1px;
   }
-}
-
-ul {
-  padding: 0px;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .btn-cta {
