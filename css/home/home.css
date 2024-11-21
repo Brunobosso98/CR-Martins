@@ -135,6 +135,16 @@ a {
   ); /* Ajusta a largura para caber dentro do contêiner */
 }
 
+/* Esconde as imagens da vitrine */
+.menu-1 ul li {
+  display: none; /* Esconde todos por padrão */
+  transition: all 0.5s ease;
+}
+
+.menu-1 ul li.active {
+  display: block; /* Apenas os ativos serão mostrados */
+}
+
 .menu-1 ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -170,15 +180,18 @@ a {
   position: relative;
 }
 
+.construcoes-lista {
+  position: relative;
+}
+
 .seta {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 60%; /* Centraliza verticalmente */
   position: absolute;
-  right: -30px;
   /* Posiciona a seta para fora do contêiner */
-  top: 50%;
   transform: translateY(-50%);
+  right: 15%;
+  z-index: 10;
 }
 
 .seta-ativa {
