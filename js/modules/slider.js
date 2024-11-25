@@ -1,26 +1,29 @@
 export default function initSlider() {
-  function slider(slide) {
-    const indicators = document.querySelectorAll(".indicator");
-    const slides = document.querySelector(".slides");
-    let currentSlide = 0;
+  const slides = document.querySelector(".slides");
+  const indicators = document.querySelectorAll(".indicator");
+  let currentSlide = 0;
+  const totalSlides = indicators.length;
 
-    indicators.forEach((indicator, index) => {
-      indicator.addEventListener("click", () => {
-        currentSlide = index;
-        updateSlider();
-      });
-    });
+  function updateSlider() {
+    // Mover o slider
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 
-    function updateSlider() {
-      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-      indicators.forEach((ind) => ind.classList.remove("active"));
-      indicators[currentSlide].classList.add("active");
-    }
-
-    // Opcional: Autoplay
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % indicators.length;
-      updateSlider();
-    }, 5000); // 5 segundos
+    // Atualizar o estado dos indicadores
+    indicators.forEach((indicator) => indicator.classList.remove("active"));
+    indicators[currentSlide].classList.add("active");
   }
+
+  // Configurar clique nos indicadores
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      currentSlide = index;
+      updateSlider();
+    });
+  });
+
+  // Autoplay com intervalo de 15 segundos
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+  }, 15000); // 15 segundos
 }
