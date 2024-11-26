@@ -148,15 +148,16 @@ a {
   ); /* Ajusta a largura para caber dentro do contêiner */
 }
 
-/* Esconde as imagens da vitrine */
+/* Esconde as imagens da vitrine
 .menu-1 ul li {
-  display: none; /* Esconde todos por padrão */
+  display: none; /* Esconde todos por padrão 
   transition: all 0.5s ease;
 }
 
 .menu-1 ul li.active {
-  display: block; /* Apenas os ativos serão mostrados */
+  display: block; /* Apenas os ativos serão mostrados
 }
+*/
 
 .menu-1 ul {
   display: grid;
@@ -198,7 +199,7 @@ a {
 }
 
 .seta {
-  display: flex;
+  display: none;
   top: 60%; /* Centraliza verticalmente */
   position: absolute;
   /* Posiciona a seta para fora do contêiner */
@@ -250,8 +251,8 @@ a {
 
 @media (max-width: 700px) {
   .menu-1 ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
   }
   .d-block {
     display: none;

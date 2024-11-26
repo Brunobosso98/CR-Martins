@@ -9,5 +9,4 @@ menuMobile.init();
 
 initDropDownMenu();
 initHeader();
-slideVitrine();
 initSlider();
