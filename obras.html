@@ -13,14 +13,15 @@
 <body>
   <header class="header-bg">
     <div class="header container2">
-      <a href="./"><img src="./imagens/icones/logo.svg" alt="CR Martins"></a>
-      <nav aria-label="primaria">
-        <ul class="header-menu font-1-h">
+      <a id="logo" href="./"><img src="./imagens/icones/logo.svg" alt="CR Martins"></a>
+      <nav class="menu" aria-label="primaria">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul data-menu="list" class="header-menu">
           <li data-dropdown>
-            <span href="./faleconosco.html"> Fale Conosco <img id="seta" src="./imagens/icones/seta.svg" alt=""> </span>
+            <a class="drop" href="./faleconosco.html"> Fale Conosco <img id="seta" src="./imagens/icones/seta.svg" alt=""> </a>
             <ul class="dropdown-menu">
               <li><a href="./trabalheconosco.html"> Trabalhe Conosco </a></li>
-              <li><a href="./trabalheconosco.html"> Nosso Contato </a></li>
+              <li><a href="./faleconosco.html"> Nosso Contato </a></li>
             </ul>
           </li>
           <li> <a href="./atuacao.html"> Serviço </a></li>
