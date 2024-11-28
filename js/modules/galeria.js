@@ -13,7 +13,6 @@ export default function initSlideGaleria() {
   images.forEach((image) => {
     image.addEventListener("click", (event) => {
       event.preventDefault();
-      console.log("clicou");
     });
   });
 
