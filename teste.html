@@ -1,83 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrossel de Imagens</title>
-  <style>
-    /* Estilos gerais */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-
-    .carousel {
-      display: flex;
-      overflow: hidden;
-      width: 100%;
-      /* Ajuste para caber em diferentes tamanhos de tela */
-      max-width: 900px;
-      /* Largura máxima */
-      height: 200px;
-      border: 2px solid #333;
-      position: relative;
-    }
-
-    .carousel img {
-      width: 33.33%;
-      /* Cada imagem ocupa um terço do carrossel */
-      height: 100%;
-      object-fit: cover;
-      flex-shrink: 0;
-      /* Impede que as imagens se reduzam */
-    }
-
-    /* Estilo da seta na última imagem */
-    .arrow-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      right: -20px;
-      /* Posiciona a seta para fora do contêiner */
-      top: 50%;
-      transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      /* Adiciona uma sombra opcional */
-    }
-
-    .arrow {
-      border: solid white;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 5px;
-      transform: rotate(45deg);
-      margin-left: 6px;
-      /* Ajuste para centralizar a seta dentro do círculo */
-    }
-  </style>
-</head>
-
-<body>
-  <div class="carousel">
-    <img src="https://via.placeholder.com/300x200" alt="Imagem 1">
-    <img src="https://via.placeholder.com/300x200" alt="Imagem 2">
-    <div class="image-with-arrow">
-      <img src="https://via.placeholder.com/300x200" alt="Imagem 3">
-      <div class="arrow-container">
-        <div class="arrow"></div>
-      </div>
+<ul>
+  <li>
+    <a href="./obras.html">
+      <div class="imagem-obra-container obra-foto">
+        <img class="fotos-1 galeria-foto galeria-foto" src="./imagens/fotos/casa-1.png" alt="Casa da Lucia" data-casa="lucia">
+    </a>
+    <div class="obra-conteudo">
+      <h4 class="c8 bold">Casa da Lucia</h4>
+      <p class="c8">Condomínio Recanto Da Matta <br class="br-2"> Itapira - SP</p>
     </div>
-  </div>
-</body>
+    <div class="imagem-obra-container obra-foto">
+      <img class="fotos-1 galeria-foto galeria-foto" src="./imagens/fotos/casa-2.png" alt="Casa da Lucia" data-casa="lucia">
+    </div>
+    <div class="imagem-obra-container obra-foto">
+      <img class="fotos-1 galeria-foto galeria-foto" src="./imagens/fotos/casa-3.png" alt="Casa da Lucia" data-casa="lucia">
+    </div>
+    </div>
+  </li>
 
-</html>
+  <li>
+    <a href="./obras.html">
+      <div class="imagem-obra-container obra-foto">
+        <img class="fotos-1 galeria-foto galeria-foto" src="./imagens/fotos/casa-2.png" alt="Casa do Bruno" data-casa="bruno">
+    </a>
+    <div class="obra-conteudo">
+      <h4 class="c8 bold">Casa do Bruno</h4>
+      <p class="c8">Condomínio Recanto Da Matta <br class="br-2"> Itapira - SP</p>
+    </div>
+    </a>
+  </li>
+  <li class="d-block">
+    <a href="./obras.html">
+      <div class="imagem-obra-container obra-foto">
+        <img class="fotos-1 galeria-foto" src="./imagens/fotos/casa-3.png" alt="Casa bonita">
+    </a>
+    <div class="obra-conteudo">
+      <h4 class="c8 bold">Santa Fé</h4>
+      <p class="c8">Condomínio Recanto Da Matta <br class="br-2"> Itapira - SP</p>
+    </div>
+    </a>
+  </li>
+</ul>

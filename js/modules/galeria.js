@@ -8,46 +8,62 @@ export default function initSlideGaleria() {
   const carrosselNext = document.querySelector(".carrossel-next");
 
   let currentImageIndex = 0;
-  const images = Array.from(document.querySelectorAll(".galeria-foto"));
+  let currentImages = []; // Armazena as imagens do carrossel atual
 
-  images.forEach((image) => {
-    image.addEventListener("click", (event) => {
-      event.preventDefault();
-      console.log("clicou");
-    });
-  });
+  // Agrupando imagens por casa
+  const imagensPorCasa = {
+    lucia: [
+      "./imagens/fotos/casa-1.png",
+      "./imagens/fotos/casa-1.png",
+      "./imagens/fotos/casa-3.png",
+    ],
+    bruno: ["./imagens/fotos/casa-2.png", "./imagens/fotos/casa-1.png"],
+  };
 
-  function openCarrossel(index) {
-    currentImageIndex = index;
+  // Atualiza a imagem do carrossel
+  function updateCarrosselImage() {
+    carrosselImg.src = currentImages[currentImageIndex];
+  }
+
+  // Abre o carrossel com as imagens da casa específica
+  function openCarrossel(casa) {
+    currentImages = imagensPorCasa[casa];
+    currentImageIndex = 0;
     updateCarrosselImage();
     carrosselContainer.classList.remove("hidden");
     outsideClick(carrosselContainer, ["click"], closeCarrossel);
   }
 
+  // Fecha o carrossel
   function closeCarrossel() {
     carrosselContainer.classList.add("hidden");
   }
 
-  function updateCarrosselImage() {
-    const { src, alt } = images[currentImageIndex];
-    carrosselImg.src = src;
-    carrosselImg.alt = alt;
-  }
-
+  // Avança para a próxima imagem
   function nextImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
+    currentImageIndex = (currentImageIndex + 1) % currentImages.length;
     updateCarrosselImage();
   }
 
+  // Volta para a imagem anterior
   function prevImage() {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    currentImageIndex =
+      (currentImageIndex - 1 + currentImages.length) % currentImages.length;
     updateCarrosselImage();
   }
 
-  images.forEach((img, index) => {
-    img.addEventListener("click", () => openCarrossel(index));
+  // Adiciona o evento de clique às imagens visíveis na galeria
+  document.querySelectorAll(".galeria-foto").forEach((img) => {
+    img.addEventListener("click", (event) => {
+      event.preventDefault(); // Impede o redirecionamento
+      const casa = img.dataset.casa; // Obtém o identificador da casa
+      if (casa && imagensPorCasa[casa]) {
+        openCarrossel(casa); // Abre o carrossel com as imagens da casa
+      }
+    });
   });
 
+  // Adiciona eventos aos controles do carrossel
   carrosselClose.addEventListener("click", closeCarrossel);
   carrosselNext.addEventListener("click", nextImage);
   carrosselPrev.addEventListener("click", prevImage);
