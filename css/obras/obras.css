@@ -76,6 +76,10 @@
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .carrossel-container {
   position: fixed;
   top: 0;
@@ -96,8 +100,10 @@
 }
 
 .carrossel-img {
-  width: 100%;
-  height: auto;
+  max-width: 70%; /* Ajuste para o tamanho desejado em relação à tela */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza a imagem */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
 }
 
 .carrossel-close,
