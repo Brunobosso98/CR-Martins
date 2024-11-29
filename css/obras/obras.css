@@ -100,10 +100,10 @@
 }
 
 .carrossel-img {
-  max-width: 70%; /* Ajuste para o tamanho desejado em relação à tela */
-  height: auto; /* Mantém a proporção da imagem */
-  margin: 0 auto; /* Centraliza a imagem */
-  display: block; /* Garante que a imagem seja tratada como um bloco */
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .carrossel-close,
