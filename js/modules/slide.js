@@ -1,7 +1,7 @@
 export default function slideVitrin(element, events, callback) {
   document.addEventListener("DOMContentLoaded", () => {
-    const ulList = document.querySelectorAll(".menu-1 ul"); // Modificado para querySelectorAll
-    const setaList = document.querySelectorAll(".seta"); // Modificado para querySelectorAll
+    const ulList = document.querySelectorAll(".menu-1 ul");
+    const setaList = document.querySelectorAll(".seta");
 
     ulList.forEach((ul, ulIndex) => {
       let currentIndex = 0;
