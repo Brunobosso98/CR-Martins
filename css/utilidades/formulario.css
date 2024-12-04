@@ -35,6 +35,10 @@
   box-shadow: 0 0 0 2px #89fd8d;
 }
 
+.columnAll {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 600px) {
   .form {
     grid-template-columns: 1fr;
