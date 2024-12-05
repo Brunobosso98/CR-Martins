@@ -1,6 +1,6 @@
 /* Estilos gerais do header */
 .header-bg {
-  background-color: #ffffff;
+  background-color: var(--cor-1);
 }
 
 .header {

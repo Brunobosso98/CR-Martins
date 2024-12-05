@@ -58,14 +58,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .menu-2 ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-  }
-}
-
 @media (max-width: 700px) {
   .menu-2 ul {
     display: grid;
@@ -73,6 +65,14 @@
   }
   .d-block {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-2 ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
 }
 
